@@ -8,7 +8,7 @@ app.set("view engine", "ejs" )
 
 
 app.get("/", (req, res) => {
-    res.send("Student management system InshaAllah new project with nodejs")
+    res.render("index", {text: "Test data recieved"})
 })
 
 app.listen(port, ()=> console.log("Running on " + port))
