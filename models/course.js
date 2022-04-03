@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const validator = require("validator");
+const  Mongoose = require("mongoose");
 
 const courseSchema = new mongoose.Schema({
   courseType: { type: String, min: 5, max: 25, required: true },
@@ -18,13 +19,19 @@ const courseSchema = new mongoose.Schema({
   },
   courseDescription: {
     type: String,
-    min: [10, "Description words must be at least " + value],
+    min: [10, "Description words must be at least "],
     max: 150,
   },
   courseCode: {
     type: String,
     required: true,
   },
+  courseDuration: {
+    type: String,
+    required: true,
+  },
 });
 
-module.exports = courseSchema;
+const Course = Mongoose.model("Course", courseSchema);
+
+module.exports = Course;
