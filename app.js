@@ -2,11 +2,10 @@ const express = require("express");
 const mongoose = require("./db/mongoose");
 const app = express();
 const port = process.env.PORT || 3000;
-
 // Routes
 const indexRouter = require("./routes/index");
 const courseRouter = require("./routes/course");
-const studentRouter = require("./routes/student")
+const studentRouter = require("./routes/student");
 const methodOverride = require("method-override");
 const path = require("path");
 

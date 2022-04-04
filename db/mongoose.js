@@ -1,8 +1,9 @@
 const mongoose = require("mongoose");
+require("dotenv").config();
 
 mongoose
   .connect(
-    "mongodb+srv://xurrambek:xurram200`@student-database.swezn.mongodb.net/student-database?retryWrites=true&w=majority",
+    `mongodb+srv://xurrambek:${process.env.DB_PASSWORD}@student-database.swezn.mongodb.net/student-database?retryWrites=true&w=majority`,
     {
       useNewUrlParser: true,
     }
