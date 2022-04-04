@@ -21,5 +21,5 @@ $npm start command is used to run project on the server which fires $node app.js
 - Nodemon runs the project without exits and interruptions during development
 
 # Links
-Github repository - https://github.com/Khurrambek/webtech.cw2.00011920
-Actual app on Heroku - https://webtech-cw2-00011920.herokuapp.com/
+- Github repository - https://github.com/Khurrambek/webtech.cw2.00011920
+- Actual app on Heroku - https://webtech-cw2-00011920.herokuapp.com/
